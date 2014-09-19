@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_login_port"
+    style="@style/style_xml_layout_port_login"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        style="@style/EstiloImagemLogo"
+        android:contentDescription="@string/descricao_logo" />
+
+    <TextView
+        android:id="@+id/labelUsuario"
+        style="@style/lbl_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textLabelUsuario" />
+
+    <EditText
+        android:id="@+id/inputUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/labelSenha"
+        style="@style/lbl_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textLabelSenha" />
+
+    <EditText
+        android:id="@+id/inputSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/manterConectado"
+        style="@style/checkbox_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manter_conectado" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        style="@style/button_login"
+        android:onClick="entrarOnClick"
+        android:text="@string/textLabelLogin" />
+
+</LinearLayout>
